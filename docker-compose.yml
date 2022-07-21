@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  database:
+    image: mongo
+    restart: always
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=username
+      - MONGO_INITDB_ROOT_PASSWORD=password
+    volumes:
+      - /c/Users/chris/workspace/backend/rest-api-nest/db-data:/data/db
+volumes:
+  my_data:
+
+
